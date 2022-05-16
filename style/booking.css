@@ -59,6 +59,7 @@
   background-color: #FFFFFF;
   border-radius: 8px;
   cursor: pointer;
+  outline: none;
 }
 
 .hall__btn:hover {
@@ -66,13 +67,32 @@
   border: 3px solid #640AA3;
 }
 
-
-.hall__input:checked+.hall__btn {
-  background-color: #FFFFFF;
+.hall__btn:focus {
+  background-color: #ffffff;
   border: 3px solid #640AA3;
 }
 
 .hall__btn:active {
+  background-color: red;
+  border: 3px solid #440f51;
+}
+
+.hall__input:checked+.hall__btn {
+  background-color: #FFFFFF;
+  border: 3px solid #440f51;
+}
+
+.hall__input:checked+.hall__btn:hover {
+  background-color: #EADEED;
+  border: 3px solid #640AA3;
+}
+
+.hall__input:checked+.hall__btn:focus {
+  background-color: #ffffff;
+  border: 3px solid #640AA3;
+}
+
+.hall__input:checked+.hall__btn:active {
   background-color: #EADEED;
   border: 3px solid #440f51;
 }
@@ -181,10 +201,6 @@
 
 .set__input-ch:checked::after {
   opacity: 1;
-}
-
-.personal {
-  /* margin-bottom: 40px; */
 }
 
 .personal__legend {

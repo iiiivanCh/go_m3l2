@@ -29,6 +29,10 @@ button {
   cursor: pointer;
 }
 
+input {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
   color: inherit;

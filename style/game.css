@@ -85,5 +85,17 @@
   left: 0;
   background-color: #6C0287;
   filter: blur(20px);
+}
 
+.game__booking:hover {
+  background-color: #840AA3;
+}
+
+.game__booking:focus {
+  background-color: #840AA3;
+  outline: none;
+}
+
+.game__booking:active {
+  background-color: #640AA3;
 }

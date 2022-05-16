@@ -20,11 +20,13 @@
   justify-content: space-between;
   padding: 0 70px;
   height: 87px;
-  background: #440F51;
+  background-color: #440F51;
+  cursor: pointer;
 }
 
 .search__item--white {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
+  cursor: pointer;
 }
 
 .search__item:not(:last-child) {
@@ -47,6 +49,19 @@
   background-image: url('../img/s7-open.svg');
 }
 
+.search__item--white:hover::after {
+  background-image: url('../img/s7-open-hover.svg');
+}
+
+/* 
+.search__item--white:focus::after {
+  background-image: url('../img/s7-open-active.svg');
+} */
+
+.search__item--white:active::after {
+  background-image: url('../img/s7-open-active.svg');
+}
+
 .search__item--dark::after {
   content: "";
   position: absolute;
@@ -54,6 +69,14 @@
   width: 46px;
   height: 46px;
   background-image: url('../img/s7-open-while.svg');
+}
+
+.search__item--dark:hover::after {
+  background-image: url('../img/s7-open-while-hover.svg');
+}
+
+.search__item--dark:active::after {
+  background-image: url('../img/s7-open-while-active.svg');
 }
 
 .search__question--white {

@@ -116,3 +116,18 @@
   font-size: 14px;
   line-height: 16px;
 }
+
+.footer__a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  outline: none;
+}
+
+.footer__a:hover {
+  color: #EADEED;
+}
+
+.footer__a:focus {
+  outline: 1px solid #CD06FF;
+}

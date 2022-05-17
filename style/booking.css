@@ -34,6 +34,23 @@
   justify-content: space-between;
 }
 
+.hall__btn {
+  position: relative;
+  z-index: 1;
+  width: 250px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 8px;
+  color: #000000;
+}
+
 .hall__input {
   position: absolute;
   -webkit-appearance: none;
@@ -41,58 +58,36 @@
   appearance: none;
 }
 
-.hall__btn {
-  position: relative;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hall__input:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -27.5px;
+  right: -125px;
   width: 250px;
   height: 55px;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  vertical-align: top;
-  color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 8px;
   cursor: pointer;
   outline: none;
 }
 
-.hall__btn:hover {
-  background-color: #EADEED;
-  border: 3px solid #640AA3;
-}
-
-.hall__btn:focus {
-  background-color: #ffffff;
-  border: 3px solid #640AA3;
-}
-
-.hall__btn:active {
-  background-color: red;
-  border: 3px solid #440f51;
-}
-
-.hall__input:checked+.hall__btn {
+.hall__input:checked:before {
   background-color: #FFFFFF;
   border: 3px solid #440f51;
 }
 
-.hall__input:checked+.hall__btn:hover {
+.hall__input:hover:before {
   background-color: #EADEED;
   border: 3px solid #640AA3;
 }
 
-.hall__input:checked+.hall__btn:focus {
-  background-color: #ffffff;
+.hall__input:focus:before {
+  background-color: #FFFFFF;
   border: 3px solid #640AA3;
 }
 
-.hall__input:checked+.hall__btn:active {
+.hall__input:active:before {
   background-color: #EADEED;
   border: 3px solid #440f51;
 }
@@ -202,6 +197,12 @@
 .set__input-ch:checked::after {
   opacity: 1;
 }
+
+.set__input-ch:focus::before {
+  background-color: #CD06FF;
+}
+
+
 
 .personal__legend {
   margin-bottom: 38px;

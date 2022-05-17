@@ -105,34 +105,44 @@
         <fieldset class="hall">
           <legend class="hall__legend">Выбери зал</legend>
           <div class="hall__wrapp">
-            <input type="radio" name="hall" id="vibes" tabindex="-1" class="hall__input" />
-            <label for="vibes" tabindex="0" class="hall__btn">80's vibes</label>
-            <input type="radio" name="hall" id="wars" tabindex="-1" class="hall__input" />
-            <label for="wars" tabindex="0" class="hall__btn">star wars</label>
-            <input type="radio" name="hall" id="west" tabindex="-1" class="hall__input" />
-            <label for="west" tabindex="0" class="hall__btn">wild west</label>
-            <input type="radio" name="hall" id="neon" tabindex="-1" class="hall__input" />
-            <label for="neon" tabindex="0" class="hall__btn">neon style</label>
+
+            <label for="vibes" class="hall__btn">
+              <input type="radio" name="hall" id="vibes" class="hall__input" />
+              80's vibes
+            </label>
+
+            <label for="wars" class="hall__btn">
+              <input type="radio" name="hall" id="wars" class="hall__input" />
+              star wars
+            </label>
+            <label for="west" class="hall__btn">
+              <input type="radio" name="hall" id="west" class="hall__input" />
+              wild west
+            </label>
+            <label for="neon" class="hall__btn">
+              <input type="radio" name="hall" id="neon" class="hall__input" />
+              neon style
+            </label>
           </div>
         </fieldset>
         <fieldset class="set">
           <legend class="set__legend">Собери набор развлечений</legend>
           <fieldset class="set__fieldset">
             <legend class="set__legend-col">Приставка:</legend>
-            <label for="ps" tabindex="0" class="set__label-r">
-              <input type="radio" name="set-r" id="ps" tabindex="-1" class="set__input-r" />
+            <label for="ps" class="set__label-r">
+              <input type="radio" name="set-r" id="ps" class="set__input-r" />
               <span class="set__p">PlayStation 5</span>
             </label>
-            <label for="smd" tabindex="0" accesskey="spase" class="set__label-r">
-              <input type="radio" name="set-r" id="smd" tabindex="-1" class="set__input-r" />
+            <label for="smd" class="set__label-r">
+              <input type="radio" name="set-r" id="smd" class="set__input-r" />
               <span class="set__p">Sega Mega Drive</span>
             </label>
-            <label for="xbox" tabindex="0" accesskey="spase" class="set__label-r">
-              <input type="radio" name="set-r" id="xbox" tabindex="-1" class="set__input-r" />
+            <label for="xbox" class="set__label-r">
+              <input type="radio" name="set-r" id="xbox" class="set__input-r" />
               <span class="set__p">X-box One S</span>
             </label>
-            <label for="dendy" tabindex="0" accesskey="spase" class="set__label-r">
-              <input type="radio" name="set-r" id="dendy" tabindex="-1" class="set__input-r" />
+            <label for="dendy" class="set__label-r">
+              <input type="radio" name="set-r" id="dendy" class="set__input-r" />
               <span class="set__p">Dendy</span>
             </label>
           </fieldset>
@@ -277,19 +287,19 @@
       <h2 class="search__title">частые вопросы</h2>
       <ul class="search__list">
         <li class="search__item search__item--white">
-          <p class="search__question">Можно ли забронировать комнату онлайн?</p>
+          <a href="#" class="search__question">Можно ли забронировать комнату онлайн?</a>
         </li>
         <li class="search__item search__item--dark">
-          <p class=" search__question search__question--white">Могут ли мне вернуть деньги за бронь?</p>
+          <a href="#" class=" search__question search__question--white">Могут ли мне вернуть деньги за бронь?</a>
         </li>
         <li class="search__item search__item--white">
-          <p class="search__question">Какая комната самая популярная?</p>
+          <a href="#" class="search__question">Какая комната самая популярная?</a>
         </li>
         <li class="search__item search__item--dark">
-          <p class="search__question search__question--white">Как получить VIP карту?</p>
+          <a href="#" class="search__question search__question--white">Как получить VIP карту?</a>
         </li>
         <li class="search__item search__item--white">
-          <p class="search__question">Какая комната самая популярная?</p>
+          <a href="#" class="search__question">Какая комната самая популярная?</a>
         </li>
       </ul>
     </div>
@@ -356,6 +366,7 @@
       </div>
     </div>
   </footer>
+
   <script>
     document.addEventListener('click', event => {
       if (event.target.matches('button')) {
